@@ -76,7 +76,7 @@ class DNSMonitor:
                         domain,
                         sys_ips,
                         trusted_ips,
-                        "⚠️ System resolver IP changed from baseline!"
+                        "System resolver IP changed from baseline!"
                     )
 
                 if sys_ips != trusted_ips:
@@ -84,7 +84,7 @@ class DNSMonitor:
                         domain,
                         sys_ips,
                         trusted_ips,
-                        "⚠️ System DNS does not match trusted resolver!"
+                        "System DNS does not match trusted resolver!"
                     )
 
             time.sleep(self.interval)
